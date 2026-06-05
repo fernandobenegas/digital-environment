@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+
+:root {
+  --background: #050505;
+  --card: #0b0b0b;
+  --primary: #8dff4f;
+  --primary-hover: #9cff63;
+  --text: #ffffff;
+  --text-secondary: #cfcfcf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: Inter, sans-serif;
+  overflow-x: hidden;
+}
+
+.glow {
+  box-shadow:
+    0 0 10px rgba(141, 255, 79, 0.5),
+    0 0 20px rgba(141, 255, 79, 0.3),
+    0 0 40px rgba(141, 255, 79, 0.2);
+}
+
+.text-glow {
+  text-shadow:
+    0 0 10px rgba(141, 255, 79, 0.8),
+    0 0 20px rgba(141, 255, 79, 0.5);
+}
