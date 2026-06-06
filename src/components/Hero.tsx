@@ -37,7 +37,7 @@ export default function Hero() {
   
   Software de gestion y Agentes de IA
   <span className="block mt-2 text-[#8dff4f] font-medium">
-    para atumatizar tu negocio
+    para automatizar procesos y hacer crecer tu negocio
   </span>
 </h1>
 
