@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ventasVideo from "../assets/videos/ventas.mp4";
 import combosVideo from "../assets/videos/combos.mp4";
 
@@ -20,23 +20,13 @@ const projects = [
 export default function Projects() {
   const [current, setCurrent] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % projects.length);
-    }, 15000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   const project = projects[current];
 
   return (
     <section
       id="proyectos"
       className="py-20 px-4 md:px-8"
-      style={{
-        marginBottom: "4rem",
-      }}
+      style={{ marginBottom: "4rem" }}
     >
       {/* Título */}
       <div
@@ -49,13 +39,9 @@ export default function Projects() {
       >
         <h2
           className="
-            text-3xl
-            md:text-5xl
-            lg:text-6xl
-            font-semibold
-            leading-tight
-            underline
-            underline-offset-8
+            text-3xl md:text-5xl lg:text-6xl
+            font-semibold leading-tight
+            underline underline-offset-8
             decoration-[#8dff4f]
           "
         >
@@ -78,28 +64,14 @@ export default function Projects() {
       </div>
 
       {/* Video */}
-      <div
-        className="
-          flex
-          justify-center
-          h-[220px]
-          sm:h-[280px]
-          md:h-[500px]
-        "
-      >
+      <div className="flex justify-center h-[220px] sm:h-[280px] md:h-[500px]">
         <video
           key={project.video}
           className="
-            w-full
-            max-w-6xl
-            h-[220px]
-            sm:h-[280px]
-            md:h-[500px]
-            object-cover
-            rounded-2xl
-            shadow-lg
-            border
-            border-zinc-800
+            w-full max-w-6xl
+            h-[220px] sm:h-[280px] md:h-[500px]
+            object-cover rounded-2xl shadow-lg
+            border border-zinc-800
           "
           autoPlay
           muted
