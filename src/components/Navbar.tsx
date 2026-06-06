@@ -23,9 +23,13 @@ export default function Navbar() {
               <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
             </svg>
           </div>
-          <span className="text-emerald-400 font-semibold tracking-wide drop-shadow-[0_0_8px_rgba(16,185,129,0.7)]">
+          <a 
+            href="/" 
+            className="text-emerald-400 font-semibold tracking-wide drop-shadow-[0_0_8px_rgba(16,185,129,0.7)]"
+          >
             Digital Environment
-          </span>
+          </a>
+
         </div>
 
         {/* Links desktop */}

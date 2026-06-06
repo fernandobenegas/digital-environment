@@ -34,14 +34,12 @@ export default function Hero() {
     text-white
   "
 >
-  Software de gestion y agentes inteligentes
+  
+  Software de gestion y Agentes de IA
   <span className="block mt-2 text-[#8dff4f] font-medium">
-    para tu negocio
+    para atumatizar tu negocio
   </span>
 </h1>
-
-
-
 
 <p
   style={{
@@ -60,7 +58,9 @@ export default function Hero() {
 >
   Desarrollamos software a medida, diseñado y adaptado
   a las necesidades únicas de tu negocio.
+  
 </p>
+
   <div
     className="
       mt-12
@@ -107,6 +107,7 @@ export default function Hero() {
         textAlign: "center",
       }}
     >
+      
       <div
         style={{
           width: "3rem",
@@ -136,10 +137,11 @@ export default function Hero() {
         {item.label}
       </span>
     </div>
+    
   ))}
 </div>
 </div>
-      
+
     </section>
   );
 }

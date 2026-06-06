@@ -3,6 +3,8 @@ import {
   Package,
   ShoppingCart,
   Globe,
+  Cpu,
+  Bot,
 } from "lucide-react";
 
 const services = [
@@ -30,7 +32,20 @@ const services = [
     description:
       "Sitios modernos y optimizados para captar clientes y fortalecer tu presencia digital.",
   },
+  {
+    icon: <Bot size={42} />, // sugerencia: ícono de robot/IA
+    title: "Agentes de IA",
+    description:
+      "Implementación de asistentes inteligentes para atención al cliente, análisis de datos y soporte en la toma de decisiones.",
+  },
+  {
+    icon: <Cpu size={42} />, // sugerencia: ícono de automatización/robotics
+    title: "Robótica para Negocios",
+    description:
+      "Automatización de procesos repetitivos en sectores como farmacias y retail, mejorando eficiencia y reduciendo errores.",
+  },
 ];
+
 
 export default function Services() {
   return (
@@ -64,15 +79,18 @@ export default function Services() {
             lineHeight: 1.1,
           }}
         >
+          <hr className="my-8 border-[#8dff4f]  mx-auto" />
           Soluciones para
           <span style={{ color: "#8dff4f" }}>
             {" "}hacer crecer tu negocio
           </span>
         </h2>
+        <hr className="my-8 border-[#8dff4f]  mx-auto" />
          <p
           style={{
             marginTop: "1.5rem",
             maxWidth: "48rem",
+            fontWeight: 500,
             marginLeft: "auto",
             marginRight: "auto",
             color: "#a1a1aa",
