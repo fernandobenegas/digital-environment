@@ -7,14 +7,62 @@ const projects = [
     video: ventasVideo,
     title: "Sistema de Gestión para Minimercado",
     description:
-      "Plataforma integral para administrar ventas, controlar inventario en tiempo real, gestionar productos, registrar movimientos de stock y acceder a reportes que permiten optimizar la operación diaria del negocio.",
+      "Plataforma integral para administrar ventas, controlar inventario en tiempo real, gestionar productos, registrar movimientos de stock y acceder a reportes avanzados.",
   },
   {
     video: combosVideo,
     title: "Menú Digital para Bares y Restaurantes",
     description:
-      "Aplicación móvil diseñada para gestionar promociones y combos de manera sencilla, calcular precios automáticamente y agilizar la atención al cliente, mejorando la experiencia de compra y reduciendo tiempos de espera.",
+      "Aplicación diseñada para gestionar promociones, combos, pedidos y precios automáticamente, agilizando la atención al cliente.",
   },
+  /*{
+    //video: landingVideo,
+    title: "Landing Pages Profesionales",
+    description:
+      "Sitios web modernos, rápidos y optimizados para captar clientes, mostrar servicios y aumentar las conversiones mediante formularios y WhatsApp.",
+  },
+  {
+    //video: iaVideo,
+    title: "Agentes Inteligentes con IA",
+    description:
+      "Asistentes virtuales entrenados para responder consultas, atender clientes, automatizar tareas y brindar soporte las 24 horas.",
+  },
+  {
+    //video: stockVideo,
+    title: "Sistema de Control de Stock",
+    description:
+      "Gestión completa de inventario con alertas de faltantes, historial de movimientos, estadísticas y control en tiempo real.",
+  },
+  {
+    //video: camarasVideo,
+    title: "Cámaras Inteligentes con IA",
+    description:
+      "Monitoreo avanzado mediante visión artificial con detección de personas, vehículos y objetos, generación de alertas y análisis en tiempo real.",
+  },
+  {
+    //video: crmVideo,
+    title: "CRM para Gestión de Clientes",
+    description:
+      "Centralización de contactos, seguimiento de oportunidades comerciales, historial de clientes y automatización de tareas de ventas.",
+  },
+  {
+    //video: farmaciaVideo,
+    title: "Automatización para Farmacias",
+    description:
+      "Soluciones para optimizar procesos internos, control de stock, gestión de medicamentos y reducción de errores operativos.",
+  },
+  {
+    //video: ecommerceVideo,
+    title: "Tiendas Online y E-commerce",
+    description:
+      "Desarrollo de plataformas de venta online integradas con medios de pago, catálogos de productos y gestión de pedidos.",
+  },
+  {
+    //video: dashboardVideo,
+    title: "Dashboards y Business Intelligence",
+    description:
+      "Paneles interactivos para visualizar métricas, indicadores clave y reportes estratégicos que facilitan la toma de decisiones.",
+  },*/
 ];
 
 export default function Projects() {

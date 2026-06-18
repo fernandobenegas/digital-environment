@@ -5,7 +5,20 @@ import {
   Globe,
   Cpu,
   Bot,
+  Camera,
+  MessageCircle 
 } from "lucide-react";
+
+{/*Emojis de wsp */}
+const serviceIcons: Record<string, string> = {
+  "Sistemas de Ventas": "🛒",
+  "Control de Stock": "📦",
+  "Software a Medida": "💻",
+  "Landing Pages": "🌐",
+  "Agentes de IA": "🤖",
+  "Robótica para Negocios": "⚙️",
+  "Cámaras Inteligentes con IA": "📹",
+};
 
 const services = [
   {
@@ -33,21 +46,28 @@ const services = [
       "Sitios modernos y optimizados para captar clientes y fortalecer tu presencia digital.",
   },
   {
-    icon: <Bot size={42} />, // sugerencia: ícono de robot/IA
+    icon: <Bot size={42} />,
     title: "Agentes de IA",
     description:
-      "Implementación de asistentes inteligentes para atención al cliente, análisis de datos y soporte en la toma de decisiones.",
+      "Asistentes inteligentes para atención al cliente, automatización de tareas y soporte comercial.",
   },
   {
-    icon: <Cpu size={42} />, // sugerencia: ícono de automatización/robotics
+    icon: <Cpu size={42} />,
     title: "Robótica para Negocios",
     description:
-      "Automatización de procesos repetitivos en sectores como farmacias y retail, mejorando eficiencia y reduciendo errores.",
+      "Automatización de procesos repetitivos para mejorar la productividad y reducir errores.",
+  },
+  {
+    icon: <Camera size={42} />,
+    title: "Cámaras Inteligentes con IA",
+    description:
+      "Monitoreo avanzado con detección de personas, vehículos y objetos mediante visión artificial de los potentes modelos YOLO.",
   },
 ];
 
 
 export default function Services() {
+  const phone = "543416609115"; 
   return (
     <section
     id="servicios"
@@ -119,7 +139,9 @@ export default function Services() {
         }}
       >
           {services.map((service) => (
+            
             <div
+            
               key={service.title}
               className="
                 group
@@ -136,11 +158,44 @@ export default function Services() {
                 hover:-translate-y-2
               "
             >
+              
               <div className="text-[#8dff4f] mb-6 transition-transform duration-300 group-hover:scale-110">
                 {service.icon}
               </div>
               <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
               <p className="text-zinc-400 leading-8">{service.description}</p>
+
+               {/*Mensaje bonito */}
+             <a
+              href={`https://wa.me/${phone}?text=${encodeURIComponent(
+                `${serviceIcons[service.title] || "🚀"} Hola Digital-Environment, vi en tu web el servicio "${service.title}" y me gustaría recibir más información, asesoramiento y un presupuesto.`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                inline-flex
+                items-center
+                justify-center
+                gap-3
+                mt-10
+                px-6
+                py-3
+                bg-transparent
+                text-[#25D366]
+                font-semibold
+                border
+                border-[#25D365]
+                rounded-md
+                transition-all
+                duration-300
+                hover:bg-[#25D366]
+                hover:text-white
+                hover:-translate-y-1
+              "
+            >
+              <MessageCircle size={20} />
+              Consultar ahora
+            </a>
             </div>
           ))}
         </div>
