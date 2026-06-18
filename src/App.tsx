@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ParticlesBackground from "./components/ParticlesBackground";
@@ -23,7 +25,7 @@ function App() {
         <Footer />
       </main>
       <WhatsAppButton />
-
+      <Analytics />
     </>
   );
 }
